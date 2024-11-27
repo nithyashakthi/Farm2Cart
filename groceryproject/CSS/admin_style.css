@@ -1,0 +1,290 @@
+@import url('pagecss.css');
+
+body{
+   background-color: whitesmoke;
+}
+.title{
+   justify-content: center;
+   display: flex;
+}
+.dashboard .box-container{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap:1.5rem;
+    align-items: flex-start;
+ }
+ 
+ .dashboard .box-container .box{
+    padding:1.5rem;
+    text-align: center;
+    border: 1px solid black;
+    box-shadow:inset;
+    background-color: white;
+    border-radius: .5rem;
+ }
+ 
+ .dashboard .box-container .box h3{
+    font-size: 2rem;
+    color:black;
+ }
+ 
+ .dashboard .box-container .box p{
+    font-size: 1.5rem;
+    background-color:whitesmoke;
+    padding:1.3rem 3rem;
+    margin:1rem 0;
+    width:250px;
+    border:1px solid black;
+    border-radius: .5rem;
+    color:black;
+ }
+ .btn,
+.delete-btn,
+.option-btn{
+   display: block;
+   width:250px;
+   margin-top: 1rem;
+   border:1px solid black;
+   border-radius: .5rem;
+   color:white;
+   font-size: 1.5rem;
+   padding:1.3rem;
+   text-transform: capitalize;
+   cursor: pointer;
+   text-align: center;
+   justify-content: center;
+   text-decoration: none;
+}
+.btn{
+   background-color:rgb(7, 223, 7);
+}
+
+.delete-btn{
+   background-color: red;
+}
+
+.option-btn{
+   background-color:orange;
+}
+
+/*
+.btn{
+   margin-top:2px;
+   padding:1rem;
+   background-color: green;
+   border-radius: .5rem;
+   font-size: 1.5rem;
+   color:white;
+   text-decoration: none;
+   text-align: center;
+}*/
+.btn:hover,
+.delete-btn:hover,
+.option-btn:hover{
+   background-color: black;
+   
+}
+
+/*----------------------admin_product page---------------------------------------------*/
+
+.add-products form{
+   max-width: 35rem;
+   padding:1rem;
+   margin:0 auto;
+   text-align: center;
+   border:2px solid black;
+   box-shadow:inset;
+   background-color: white;
+   border-radius: .5rem;
+}
+
+.add-products form .flex{
+   display: flex;
+   justify-content:space-around;
+ 
+}
+
+.add-products form .flex .inputBox{
+   width:240px;
+}
+
+.add-products form .box{
+   width: 90%;
+   display: inline-block;
+   margin:1rem 0;
+   padding:1.2rem 1.4rem;
+   font-size: 1rem;
+   color:black;
+   border-radius: .5rem;
+   background-color:whitesmoke;
+   border:1px solid black;
+}
+
+.add-products form textarea{
+   height: 10rem;
+   resize: none;
+}
+
+/*-----------product added--------*/
+.show-products{
+   padding-top: 0;
+}
+
+.show-products .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, 28rem);
+   gap:1.5rem;
+   align-items: flex-start;
+   justify-content:center;
+}
+
+.show-products .box-container .box{
+   text-align: center;
+   border:2px solid black;
+   box-shadow:inset;
+   background-color:white;
+   border-radius: .5rem;
+   padding:2rem;
+   position: relative;
+}
+
+.show-products .box-container .box .price{
+   position: absolute;
+   top:1rem; left:1rem;
+   padding:1rem;
+   font-size: 2rem;
+   color:white;
+   background-color:red;
+   border-radius: .5rem;
+}
+
+.show-products .box-container .box img{
+   width: 100%;
+   margin-bottom: 1rem;
+}
+
+.show-products .box-container .box .name{
+   margin:.5rem 0;
+   font-size: 1.8rem;
+   color:black;
+}
+
+.show-products .box-container .box .cat{
+   font-size: 1rem;
+   color:green;
+}
+
+.show-products .box-container .box .details{
+   padding-top: 1rem;
+   font-size: 1.5rem;
+   line-height: 1.5;
+   color:#666;
+}
+
+/*------ admin update product--------------*/
+
+.update-product form{
+   max-width: 40rem;
+   padding:2rem;
+   margin:0 auto;
+   text-align: center;
+   border:2px solid black;
+   box-shadow:inset;
+   background-color:white;
+   border-radius: .5rem;
+}
+
+.update-product form img{
+   height: 15rem;
+   object-fit: cover;
+   margin-bottom: 1rem;
+}
+
+.update-product form .box{
+   width: 100%;
+   border:1px solid black;
+   border-radius:1rem;
+   background-color:whitesmoke;
+   padding:1.2rem 1.4rem;
+   font-size: 1rem;
+   color:black;
+   margin:1rem 0;
+}
+
+
+/*----------admin order page------*/
+
+.placed-orders .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, 33rem);
+   gap:1.5rem;
+   align-items: flex-start;
+   justify-content:center;
+}
+
+.placed-orders .box-container .box{
+   border:2px solid black;
+   box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+   background-color: white;
+   border-radius: .5rem;
+   padding:2rem;
+}
+
+.placed-orders .box-container .box p{
+   margin-bottom: 1rem;
+   line-height: 1;
+   font-size: 1.8rem;
+   color:black;
+}
+
+.placed-orders .box-container .box p span{
+   color:green;
+}
+
+.placed-orders .box-container .box .drop-down{
+   width: 100%;
+   padding:1.2rem 1.4rem;
+   font-size: 1.8rem;
+   border:1px solid black;
+   border-radius: .5rem;
+   background-color:whitesmoke;
+   margin-bottom: .5rem;
+}
+
+/*---------------------admin users page-------------*/
+
+.user-accounts .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, 33rem);
+   gap:1.5rem;
+   align-items: flex-start;
+   justify-content:center;
+}
+
+.user-accounts .box-container .box{
+   border:1px solid black;
+   box-shadow: inset;
+   background-color:white;
+   border-radius: .5rem;
+   padding:2rem;
+   text-align: center;
+}
+
+.user-accounts .box-container .box img{
+   height: 100px;
+   width: 100px;
+   border-radius:25px;
+   object-fit: cover;
+   margin-bottom: 1rem;
+}
+
+.user-accounts .box-container .box p{
+   line-height: 1.5;
+   padding:.5rem 0;
+   font-size: 1.5rem;
+   color:#666;
+}
+
+.user-accounts .box-container .box p span{
+   color:green;
+}

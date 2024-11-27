@@ -17,7 +17,7 @@ Farm2Cart is a web application designed to connect farmers directly with consume
 - Front awesome Bootstrap
 
 ## Installation
-1. Clone the repository: `git clone https://github.com/nithyashakthi/groceryproject.git`
+1. Clone the repository: `git clone https://github.com/nithyashakthi/Farm2Cart/groceryproject.git`  
 2. Set up the database:
    - Create a MySQL database named `G_store`
    - Import the provided SQL file (`G_store.sql`) into your database
